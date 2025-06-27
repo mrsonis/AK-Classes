@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.K Classes -  Institution</title>
+    <meta name="description" content="A.K CLASSES - A leading educational institution providing quality education and holistic development for students">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%23667eea'/><stop offset='100%25' style='stop-color:%23764ba2'/></linearGradient></defs><rect fill='url(%23grad)' width='32' height='32' rx='6'/><text x='16' y='22' text-anchor='middle' fill='white' font-family='Font Awesome 6 Free' font-size='16' font-weight='900'>&#xf51c;</text></svg>" type="image/svg+xml">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%23667eea' width='32' height='32' rx='6'/><text x='16' y='22' text-anchor='middle' fill='white' font-family='Font Awesome 6 Free' font-size='16' font-weight='900'>&#xf51c;</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%23667eea'/><stop offset='100%25' style='stop-color:%23764ba2'/></linearGradient></defs><rect fill='url(%23grad)' width='32' height='32' rx='6'/><text x='16' y='20' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-size='12' font-weight='bold'>SKN</text></svg>" type="image/svg+xml">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #about, #director {
+            position: relative;
+            background-image: url('images/moon.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            padding: 80px 0;
+        }
+        #about::before, #director::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 25, 47, 0.8);
+            z-index: 1;
+        }
+        #about .container, #director .container {
+            position: relative;
+            z-index: 2;
+        }
+        #about .section-header p,
+        #about .about-details p,
+        #about .feature-item span,
+        #director .section-description,
+        #director .director-info p {
+            color: rgba(255, 255, 255, 0.85);
+        }
+        #about .section-title,
+        #about .about-details h3,
+        #about .about-details h4,
+        #about .feature-item strong,
+        #director .section-title,
+        #director .director-info h3 {
+            color: #fff;
+        }
+        #about .section-badge,
+        #director .section-badge {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        #director .director-info p[style*="color:#764ba2"] {
+            color: #bca0e5 !important;
+        }
+
+        #director blockquote {
+            background: rgba(255, 255, 255, 0.05);
+            border-left-color: #bca0e5;
+            color: #fff;
+        }
+    </style>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "A.K classes",
+      "image": "https://A.K classes.edu.in/coaching_logo.png",
+      "description": "A premier educational institution providing quality education and holistic development for students.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot No - 14, Opp Bharat Ram Global School",
+        "addressLocality": "Indirapuram",
+        "addressRegion": "Ghaziabad",
+        "postalCode": "201014",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.64577848347785,
+        "longitude": 77.36705147617802
+      },
+      "url": "https://akclasses.edu.in",
+      "telephone": "+919811955712",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="school-logo">
+                <img src="images/alogo.png" alt="School Logo" style="height: 48px; width: 48px; border-radius: 50%; object-fit: cover;">
+            </div>
+            <h3>A.K classes</h3>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="bg-elements">
+        <div class="floating-shapes"></div>
+        <div class="gradient-orbs"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" data-aos="fade-down" data-aos-duration="800">
+        <div class="nav-container">
+            <div class="nav-brand" data-aos="fade-right" data-aos-delay="200">
+                <div class="brand-icon">
+                    <img src="images/alogo.png" alt="School Logo" style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="brand-text">
+                    <h2>A.K classes</h2>
+                    <span>Excellence in Education</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li data-aos="fade-down" data-aos-delay="300"><a href="#home" class="nav-link">Home</a></li>
+                <li data-aos="fade-down" data-aos-delay="400"><a href="#about" class="nav-link">About</a></li>
+                <li data-aos="fade-down" data-aos-delay="600"><a href="#academics" class="nav-link">Academics</a></li>
+                <li data-aos="fade-down" data-aos-delay="700"><a href="#facilities" class="nav-link">Facilities</a></li>
+                <li data-aos="fade-down" data-aos-delay="800"><a href="#admission" class="nav-link">Admission</a></li>
+                <li data-aos="fade-down" data-aos-delay="500"><a href="teacher.html" class="nav-link">Teachers</a></li>
+                <li data-aos="fade-down" data-aos-delay="900"><a href="students.html" class="nav-link">Our Students </a></li>
+            </ul>
+            
+            <div class="nav-actions" data-aos="fade-left" data-aos-delay="1000">
+                <a href="#admission" class="btn-appointment">
+                    <i class="fas fa-user-graduate"></i>
+                    Apply Now
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-education-icons">
+                <i class="fas fa-book" data-aos="zoom-in" data-aos-delay="1000"></i>
+                <i class="fas fa-graduation-cap" data-aos="zoom-in" data-aos-delay="1200"></i>
+                <i class="fas fa-chalkboard-teacher" data-aos="zoom-in" data-aos-delay="1400"></i>
+                <i class="fas fa-school" data-aos="zoom-in" data-aos-delay="1600"></i>
+                <i class="fas fa-pencil-alt" data-aos="zoom-in" data-aos-delay="1800"></i>
+                <i class="fas fa-microscope" data-aos="zoom-in" data-aos-delay="2000"></i>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge" data-aos="fade-right" data-aos-delay="500">
+                    <i class="fas fa-award"></i>
+                    <span>Excellence in Education</span>
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="700">
+                    <span class="title-line">A.K Classes</span>
+                    <span class="title-subtitle">Nurturing Minds, Building Futures</span>
+                </h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="900">
+                    Providing quality education with a focus on holistic development. 
+                    Empowering students to become responsible global citizens.
+                </p>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="1200">
+                        <span class="stat-number" data-count="20">0</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="1400">
+                        <span class="stat-number" data-count="1000">0</span>
+                        <span class="stat-label">Happy Students</span>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="1600">
+                        <span class="stat-number" data-count="95">0</span>
+                        <span class="stat-label">% Success Rate</span>
+                    </div>
+                </div>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1300">
+                    <a href="#admission" class="btn-primary" data-aos="slide-right" data-aos-delay="1500">
+                        <span>Apply for Admission</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn-secondary" data-aos="slide-left" data-aos-delay="1700">
+                        <i class="fas fa-play"></i>
+                        <span>Virtual Tour</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="800">
+                <div class="school-card">
+                    <div class="card-glow"></div>
+                    <img src="images/coaching.jpeg" alt="A.K Classes" class="coaching-photo">
+                    <div class="card-info">
+                        <h3>A.K Clasess</h3>
+                        <p>CBSE, ICSE,BSEB Separate for batch for each </p
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5 (96 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">About coaching</span>
+                <h2 class="section-title">Welcome to A.K Classes</h2>
+                <p class="section-description">
+                    A premier educational institution committed to academic excellence and holistic development
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                    <div class="image-frame">
+                        <img src="images/satika.jpg" alt="A,K Classes Principal">
+                        <div class="image-overlay">
+                            <h4>Ejaz Ahmed</h4>
+                            <p>Principal, A.K Clasess</p>
+                            <div class="experience-badge" data-aos="zoom-in" data-aos-delay="800">
+                                <span class="badge-number">20+</span>
+                                <span class="badge-text">Years of Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-details" data-aos="fade-left" data-aos-delay="400">
+                    <div class="coaching-info">
+                        <h3 data-aos="fade-up" data-aos-delay="600">Our Vision</h3>
+                        <p class="vision" data-aos="fade-up" data-aos-delay="700">
+                            To nurture young minds and create responsible global citizens through quality education and holistic development.
+                        </p>
+                        
+                        <div class="features" data-aos="fade-up" data-aos-delay="800">
+                            <h4>Why Choose Us</h4>
+                            <div class="feature-list">
+                                <div class="feature-item" data-aos="slide-right" data-aos-delay="900">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <div>
+                                        <strong>Expert Faculty</strong>
+                                        <span>Highly qualified and experienced teachers</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item" data-aos="slide-right" data-aos-delay="1000">
+                                    <i class="fas fa-laptop"></i>
+                                    <div>
+                                        <strong>Modern Infrastructure</strong>
+                                        <span>State-of-the-art facilities and technology</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item" data-aos="slide-right" data-aos-delay="1100">
+                                    <i class="fas fa-users"></i>
+                                    <div>
+                                        <strong>Holistic Development</strong>
+                                        <span>Focus on academics, sports, and arts</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item" data-aos="slide-right" data-aos-delay="1200">
+                                    <i class="fas fa-medal"></i>
+                                    <div>
+                                        <strong>Academic Excellence</strong>
+                                        <span>Consistently high board results</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top:2rem;text-align:center;">
+                            <a href="#teachers" class="btn-primary" style="padding: 0.75rem 2rem; font-size: 1.1rem; border-radius: 30px; background: #667eea; color: #fff; text-decoration: none; box-shadow: 0 2px 8px rgba(102,126,234,0.10); transition: background 0.2s;">Meet Our Teachers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Coaching Director Section -->    
+    <section id="director" class="director-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Director</span>
+                <h2 class="section-title">Meet Our Director</h2>
+                <p class="section-description">Guiding A.K Classes with vision and dedication</p>
+            </div>
+            <div class="director-content" style="display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:center;">
+                <div class="director-photo" data-aos="fade-right" style="flex:0 0 220px;text-align:center;">
+                    <img src="images/aryan.jpg" alt="Director Sir" style="width:220px;height:220px;object-fit:cover;border-radius:50%;box-shadow:0 4px 24px rgba(0,0,0,0.10);border:6px solid #fff;">
+                </div>
+                <div class="director-info" data-aos="fade-left" style="max-width:500px;">
+                    <h3 style="margin-bottom:0.5rem;">Ejaz Sir</h3>
+                    <p style="font-weight:600;color:#764ba2;margin-bottom:0.5rem;">Director, A.K Classes</p>
+                    <p style="margin-bottom:1rem;">With a passion for education and over a decade of experience, Ejaz Sir has been instrumental in shaping the academic and ethical standards of A.K Classes. His leadership inspires both students and faculty to strive for excellence every day.</p>
+                    <blockquote style="font-style:italic;color:#444;background:#f7f7f7;border-left:4px solid #764ba2;padding:0.75rem 1.25rem;border-radius:8px;">"Education is not just about knowledge, but about building character and confidence for life."</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Teachers Section -->
+<section id="teachers" class="teachers-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">Our Teachers</span>
+            <h2 class="section-title">Meet Our Dedicated Teachers</h2>
+            <p class="section-description">Our experienced and passionate teachers are the backbone of A.K Classes.</p>
+        </div>
+
+
+    <!-- Academics Section -->
+    <section id="academics" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Academics</span>
+                <h2 class="section-title">Our Academic Programs</h2>
+                <p class="section-description">
+                    Comprehensive curriculum designed to foster intellectual growth and critical thinking
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Primary coaching</h3>
+                    <p>Nursery to Class V - Building strong foundations through interactive learning.</p>
+                    <ul class="service-features">
+                        <li>Activity-based Learning</li>
+                        <li>Language Development</li>
+                        <li>Basic Mathematics</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-price">Age: 3-10 years</span>
+                        <a href="#admission" class="service-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="400">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Middle coaching</h3>
+                    <p>Class VI to VIII - Developing critical thinking and subject expertise.</p>
+                    <ul class="service-features">
+                        <li>Science & Mathematics</li>
+                        <li>Social Studies</li>
+                        <li>Computer Science</li>
+                        <li>Languages</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-price">Age: 11-13 years</span>
+                        <a href="#admission" class="service-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>coaching</h3>
+                    <p>Class IX to X - Preparing for board examinations and future careers.</p>
+                    <ul class="service-features">
+                        <li>Science Stream</li>
+                        <li>Commerce Stream</li>
+                        <li>Humanities Stream</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span class="service-price">Age: 14-16 years</span>
+                        <a href="#admission" class="service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="experience">
+        <div class="container">
+            <div class="experience-content">
+                <div class="experience-text" data-aos="fade-right">
+                    <span class="section-badge">Facilities</span>
+                    <h2>World-Class Infrastructure</h2>
+                    <p>Our campus is equipped with modern facilities to provide the best learning environment for our students.</p>
+                    
+                    <div class="experience-highlights">
+                        <div class="highlight-item" data-aos="slide-right" data-aos-delay="200">
+                            <div class="highlight-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="highlight-content">
+                            
+                                <p>Well-equipped science and computer labs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item" data-aos="slide-right" data-aos-delay="400">
+                            <div class="highlight-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Sports Complex</h4>
+                                <p>Indoor and outdoor sports facilities</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item" data-aos="slide-right" data-aos-delay="600">
+                            <div class="highlight-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Digital Library</h4>
+                                <p>Extensive collection of books and digital resources</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-visual" data-aos="fade-left" data-aos-delay="300">
+                    <div class="stats-container">
+                        <div class="stat-circle" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="circle-progress" data-percentage="95">
+                                <span class="percentage">95%</span>
+                                <span class="label">Pass Rate</span>
+                            </div>
+                        </div>
+                        <div class="achievement-cards">
+                            <div class="achievement-card" data-aos="flip-left" data-aos-delay="700">
+                                <i class="fas fa-medal"></i>
+                                <h4>Best coaching Award</h4>
+                                <p>Academic Excellence</p>
+                            </div>
+                            <div class="achievement-card" data-aos="flip-right" data-aos-delay="900">
+                                <i class="fas fa-certificate"></i>
+                                
+                                <p>Quality Education</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section id="admission" class="contact">
+        <div class="contact-background">
+            <div class="contact-overlay"></div>
+            <div class="floating-elements">
+                <div class="element element-1"></div>
+                <div class="element element-2"></div>
+                <div class="element element-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Admission</span>
+                <h2 class="section-title">Apply for Admission</h2>
+                <p class="section-description">
+                    Join our community of learners and begin your journey towards excellence
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-cards">
+                        <div class="contact-card location-card" data-aos="slide-right" data-aos-delay="200">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>coaching Location</h4>
+                                <p><br>Buddha Colony, Gh A.K Classes aziabad<br>Bihar, India</p>
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card hours-card" data-aos="slide-right" data-aos-delay="400">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>coaching Hours</h4>
+                                <div class="hours-list">
+                                    <div class="hour-item">
+                                        <span class="day">Monday - Saturday</span>
+                                        <span class="time">03:00 PM - 07:00 PM</span>
+                                    </div>
+                                    <div class="hour-item">
+                                        <span class="day">Office Hours</span>
+                                        <span class="time">02:00 PM- 04:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card phone-card" data-aos="slide-right" data-aos-delay="600">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Contact Numbers</h4>
+                                <div class="phone-list">
+                                    <a href="tel:+918130959107" class="phone-link">
+                                        <i class="fas fa-phone-alt"></i>
+                                        +91 8130959107
+                                        <span>Admission Office</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="appointment-section">
+                    <div class="appointment-form" data-aos="fade-left" data-aos-delay="300">
+                        <div class="form-header">
+                            <div class="form-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h3>Admission Form</h3>
+                            <p>Apply for admission to A.K classes</p>
+                        </div>
+                        
+                        <form id="admissionForm" class="appointment-form-container" action="https://formspree.io/f/xnndjpbd" method="POST">
+                            <div class="form-row">
+                                <div class="form-group" data-aos="fade-up" data-aos-delay="500">
+                                    <label for="name">Student's Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter student's name" required>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                
+                                <div class="form-group" data-aos="fade-up" data-aos-delay="600">
+                                    <label for="parent_name">Parent's Name</label>
+                                    <input type="text" id="parent_name" name="parent_name" placeholder="Enter parent's name" required>
+                                    <i class="fas fa-users"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group" data-aos="fade-up" data-aos-delay="700">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                
+                                <div class="form-group" data-aos="fade-up" data-aos-delay="800">
+                                    <label for="age">Student's Age</label>
+                                    <input type="number" id="age" name="age" placeholder="Enter age" min="3" max="17" required>
+                                    <i class="fas fa-birthday-cake"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group" data-aos="fade-up" data-aos-delay="900">
+                                    <label for="class">Class Applying For</label>
+                                    <select id="class" name="class" required>
+                                        <option value="">Select class</option>
+                                        
+                                        <option value="1">Class I</option>
+                                        <option value="2">Class II</option>
+                                        <option value="3">Class III</option>
+                                        <option value="4">Class IV</option>
+                                        <option value="5">Class V</option>
+                                        <option value="6">Class VI</option>
+                                        <option value="7">Class VII</option>
+                                        <option value="8">Class VIII</option>
+                                        <option value="9">Class IX</option>
+                                        <option value="10">Class X</option>
+                                        <option value="11">class XI</option>
+                                     <option value="12">class XII</option>
+                                       
+
+                                
+                                    
+                                    </select>
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                
+                                
+                                    
+                                    <input type="text" id="best batch" name="best_batch" placeholder="Enter best batch name">
+                                    <i class="fas fa-coaching"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group" data-aos="fade-up" data-aos-delay="1100">
+                                <label for="message">Additional Information</label>
+                                <textarea id="message" name="message" placeholder="Any specific requirements or questions..." rows="4"></textarea>
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit" data-aos="zoom-in" data-aos-delay="1300">
+                                <span>Submit Application</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            
+                            <div class="form-note" data-aos="fade-up" data-aos-delay="1400">
+                                <i class="fas fa-info-circle"></i>
+                                <p>We'll contact you within 24 hours to schedule an admission test and interview.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+
+            <!-- Map Section -->
+            <div class="map-section" data-aos="fade-up" data-aos-delay="500">
+                <div class="map-header">
+                    <h3>Find Our coaching</h3>
+                    <p>Located in the heart of Buddha Colony, Patna</p>
+                </div>
+                <div class="map-container" data-aos="zoom-in" data-aos-delay="700">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5539289131502!2d85.1281595!3d25.619734899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed596cbb82d509%3A0xaa80e4d1b858a4ba!2sA.%20K%20Classes!5e0!3m2!1sen!2sin!4v1749098817818!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <div class="footer-brand">
+                        <h3>A.K Classes</h3>
+                        <p>Excellence in Education</p>
+                    </div>
+                    <p>Nurturing young minds and building futures through quality education with the experience.</p>
+                </div>
+                
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#academics">Academics</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#admission">Admission</a></li>
+                        <li><a href="#admission">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="600">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#academics">Primary School</a></li>
+                        <li><a href="#academics">Middle School</a></li>
+                        <li><a href="#academics">High School</a></li>
+                        <li><a href="#facilities">Extra Curricular</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom" data-aos="fade-up" data-aos-delay="1000">
+                <p>&copy; 2025 A.K CLASSES. All rights reserved.</p>
+                <p>Developed by <a href="students.html" target="_blank" rel="noopener"> SHIVAM & CHANDAN </a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float" id="whatsapp-float" data-aos="zoom-in" data-aos-delay="2000">
+        <a href="https://wa.me/91981192?text=Hello%20Sri%20Krishna%20Niketan,%20I%20would%20like%20to%20know%20more%20about%20admissions" 
+           target="_blank" 
+           rel="noopener"
+           class="whatsapp-btn"
+           aria-label="Chat on WhatsApp">
+            <div class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+            <div class="pulse-ring"></div>
+        </a>
+    </div>
+
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-chat-widget" id="whatsapp-chat">
+        <div class="chat-header">
+            <div class="chat-avatar">
+                <img src="images/akclasses.jpg" alt="Sri Krishna Niketan" style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+                <div class="online-indicator"></div>
+            </div>
+            <div class="chat-info">
+                <h4>A.K Classes</h4>
+                <p class="status">Typically replies instantly</p>
+            </div>
+            <button class="chat-close" id="chat-close" title="Close chat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message">
+                <p>Hello! 👋</p>
+                <p>How can we help you today?</p>
+                <div class="quick-options">
+                    <button class="quick-btn" data-message="I want to apply for admission">📝 Apply for Admission</button>
+                    <button class="quick-btn" data-message="I need information about fees">💰 Fee Structure</button>
+                    <button class="quick-btn" data-message="I have a question about academics">❓ Academic Programs</button>
+                </div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <a href="https://wa.me/919811955712" target="_blank" rel="noopener" class="start-chat-btn">
+                <i class="fab fa-whatsapp"></i>
+                Start Conversation
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
